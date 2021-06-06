@@ -1,0 +1,232 @@
+html{
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1{
+    font-size: 30px;
+}
+th{background-color: #afe3f8}
+td, th {
+border: 1px solid #289dad;
+text-align: left;
+padding: 8px;
+}
+
+div{
+    text-align: center;
+    width: 800px;
+}
+
+#perfil{
+    width: 100px;
+}
+footer{
+    background-color: rgb(190, 223, 212); 
+    position: absolute;
+    width:100%;
+
+}
+
+/*Customizando formulário*/
+form{
+    margin: 0 auto;
+    border: 1px solid  cadetblue;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 1%;
+}
+label{
+    display: inline-block;
+    text-align: right;
+}
+input{
+    width: 650px;
+}
+textarea{
+    width: 650px;
+}
+input:focus{
+    border-color: black;
+}
+
+
+#nav-menu {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+#menu {
+    list-style: none;
+    padding-left: 0;
+}
+#menu li{
+    background-color: rgb(88, 88, 88);
+    display: block;
+    float: left;
+    padding: 1em;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#menu li a{
+    color:aquamarine;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+h3{
+    text-align: center;
+}
+li, a{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 15px;
+}
+p#contato{
+    font-size: 15px;
+}
+#menu li a:hover,
+#menu li:focus-within{
+    cursor: pointer;
+    background-color: rgba(22, 40, 196, 0.288);
+    transition:0.5s;
+
+}
+article{
+    padding: 10px;
+    margin-top: 30px;
+}
+input[type="submit"]{
+    font-weight: bold;
+}
+
+.button:hover{
+    color: brown;
+    background-color: cadetblue;
+}
+
+.button:active{
+    color: brown;
+    background-color: cadetblue;
+    box-shadow: 5px 5px #999;
+    transform: translateY(5px);
+}
+
+.button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    outline: none;
+    color:darkblue;
+    background-color: rgb(52, 174, 211);
+    font-size: 20px;
+    box-shadow: 5px 8px #999;
+    cursor: pointer;
+}
+
+.dropdown {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    box-shadow: 0px 8px 16px 0px cornflowerblue;
+
+}
+
+.dropdown li {
+    clear: both;
+    width: 100%;
+}
+
+.dropdown a:hover {
+    color:rgb(207, 26, 117);
+}
+
+/*Controla o dropdown*/
+
+#menu li:hover>ul,
+#menu li:focus-within>ul,
+.dropdown ul:hover,
+.dropdown ul:focus {
+    visibility: visible;
+    opacity:1;
+    display: block;
+}
+
+@media screen and (max-width: 840px){
+    h1{
+        font-size: 1.5em;
+    }
+    input{
+        width: 350px;
+    }
+    textarea{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:480px){
+    html{
+        max-width: 480px;
+        font-size: 1.3em;
+    }
+
+    #menu {
+        width: auto;
+        height: auto;
+        background-color: rgb(206, 200, 200);
+    }
+    
+    #menu li {
+        color:rgb(187, 211, 203);
+        width: 100%;
+        float: none;
+        text-decoration: none;
+    }
+    
+    #menu li a {
+        color: rgb(128, 211, 139);
+        text-align: left;
+        display: block;
+        outline: none;
+    }
+    
+    #menu li:hover>,
+    #menu li:focus-within>,
+    .dropdown ul:hover{
+        cursor: pointer;
+        font-weight: bold;
+        color: rgb(25, 171, 190);
+        background-color: rgb(6, 54, 54);
+        transition: 0.3s;
+        left: 10px;
+    }
+
+    .dropdown {
+        position: static;
+        left: 0px;
+        background-color: beige;
+        list-style: none;
+    }
+    label{
+        display: inline-block;
+        text-align: right;
+        font-size: 1.3em;
+    }
+    input{
+        width: 150px;
+    }
+    textarea{
+        width: 250px;
+    }
+}
